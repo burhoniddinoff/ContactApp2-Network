@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ImageView -->
+    <style name="BackButton" parent="View">
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:background">?android:selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:src">@drawable/ic_back</item>
+    </style>
+
+
+    <!-- TextView -->
+    <style name="View">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!-- Button -->
+    <style name="ActionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

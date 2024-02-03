@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contactScreen">
+
+    <fragment
+        android:id="@+id/contactScreen"
+        android:name="com.example.contactappwithinternet2.presentation.screen.ContactScreen"
+        android:label="screen_contact"
+        tools:layout="@layout/screen_contact" >
+        <action
+            android:id="@+id/action_contactScreen_to_addContactScreen"
+            app:destination="@id/addContactScreen" />
+        <action
+            android:id="@+id/action_contactScreen_to_editContactScreen"
+            app:destination="@id/editContactScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactScreen"
+        android:name="com.example.contactappwithinternet2.presentation.screen.AddContactScreen"
+
+        tools:layout="@layout/screen_add_contact"
+        android:label="AddContactScreen" />
+    <fragment
+        android:id="@+id/editContactScreen"
+        android:name="com.example.contactappwithinternet2.presentation.screen.EditContactScreen"
+        tools:layout="@layout/screen_edit_contact"
+        android:label="EditContactScreen" />
+</navigation>
